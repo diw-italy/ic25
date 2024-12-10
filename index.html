@@ -69,7 +69,7 @@ input[type="submit"] {margin-top: 10px;}input[type="submit"] {background-color: 
     // Validate text fields
     var fields = ["name", "surname", "institute", "course", "graduationYear", "email", "phone"];
     for (var i = 0; i < fields.length; i++) {
-        var field = document.forms["RegisterIndustryContest"][fields[i]].value;
+        var field = document.forms["RegisterIndustryContest2025"][fields[i]].value;
         if (field == null || field == "") {
             alert("All fields must be filled out");
             return false;
@@ -83,15 +83,8 @@ input[type="submit"] {margin-top: 10px;}input[type="submit"] {background-color: 
     }
 
     // Validate checkboxes
-    if (!document.forms["RegisterIndustryContest"]["acceptRegulationsAndPolicies"].checked) {
+    if (!document.forms["RegisterIndustryContest2025"]["acceptRegulationsAndPolicies"].checked) {
         alert("You must agree to the contest regulations and privacy policy");
-        return false;
-    }
-
-    // Validate reCAPTCHA
-    var recaptcha = grecaptcha.getResponse();
-    if (recaptcha.length == 0) {
-        alert("Please verify that you are not a robot");
         return false;
     }
 
