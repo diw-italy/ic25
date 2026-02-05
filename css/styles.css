@@ -80,6 +80,20 @@ a:hover {
     background: #e67e22;
 }
 
+/* Secondary CTA (outlined) */
+#section-registration a.cta-secondary {
+    background: #ffffff;
+    color: #d35400;
+    border: 2px solid #d35400;
+}
+
+/* Hover effect */
+#section-registration a.cta-secondary:hover {
+    background: #d35400;
+    color: #ffffff;
+}
+
+
 /* Footer */
 footer {
     background: #2c3e50;
