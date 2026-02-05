@@ -89,8 +89,9 @@ a:hover {
 
 /* Hover effect */
 #section-registration a.cta-secondary:hover {
-    background: #d35400;
-    color: #ffffff;
+    background: #ffffff;
+    color: #e67e22;
+    border: 2px solid #e67e22;
 }
 
 
